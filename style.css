@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*Persiapan*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*mempermudah untuk mengubah susunan*/
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Mulish', sans-serif;
+}
+
+:root {
+    --yellow: #FCA311;
+    --blue-navy: #18304A;
+    --black: #000000;
+    --white: #FFFFFF;
+    --gray: #6D6666;
+    --text: font-family: 'Mulish', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.baground {
+    height: 119px;
+    width: auto;
+    background-color: #000;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    left: 30px;
+    width: auto;
+    height: 110px;
+    background-color: var(--gray);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.header img {
+    width: 10rem;
+    margin-left: 136px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.nav{
+    display: flex;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a{
+    color: var(--blue-navy);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 17px;
+}
+
+.line {
+    height: 60px;
+    width: 3px;
+    background-color: var(--blue-navy);
+    margin-right: 20px;
+}
+
+.apa{
+     align-items: center;
+     justify-content: space-between;
+     display: flex;
+     width: 100%;
+}
+
+.btn-masuk {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: #18304A;
+    font-family: var(--text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 17px;
+}
+
+.btn-daftar {
+    display: flex;
+    position: relative;
+    width: 150px;
+    /* height: 49; */
+    padding: 10px 0px 10px 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue-navy);
+    border-radius: 15px;
+    margin-right: 136px;
+}
+
+.btn-daftar a {
+    color: #FFF;
+    font-family: var(--text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.vector {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    margin-left: 10px;
+    }
+
+#vector-1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+/* .banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(assets/section-1/Group\ 16\ \(1\).png);
+    background-size: cover;
+    background-position: bottom;
+}
+.banner .clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.banner .clouds img {
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    animation: animate calc(8s * var(--i)) linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+} */
+/* SECTION 1 */
+.section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(assets/section-1/Group\ 16\ \(1\).png);
+    background-size: cover;
+    background-position: bottom;
+    z-index: 7;
+}
+
+.text-section-1 {
+    position: absolute;
+    color: var(--white);
+    text-align: center;
+    font-family: var(--text);
+    font-size: 50px;
+    font-style: normal;
+}
+
+.btn-section-1 {
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    width: 339px;
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: 120px;
+}
+
+.btn-section-1 a {
+    margin: auto;
+    color: #000;
+    text-align: center;
+    font-family: var(--text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* SECTION 2 */
+.logo-carousel {
+    overflow: hidden;
+    width: auto; /* Sesuaikan dengan kebutuhan */
+    margin-top: 145px;
+    margin-bottom: 145px;
+}
+
+.carousel-track {
+    display: flex;
+    width: calc(auto * 10); /* Sesuaikan dengan jumlah logo (kali dua untuk looping) */
+    animation: scroll 20s linear infinite;
+}
+
+.carousel-track img {
+    width: auto; /* Sesuaikan ukuran gambar/logo */
+    padding: 0 10px;
+    margin-left: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* SECTION 3 */
